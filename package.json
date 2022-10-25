@@ -8,7 +8,7 @@
   "scripts": {
     "test": "jest",
     "dev": "tsc --watch",
-    "lint": "eslint src __tests__ --ext .js,.ts --cache --fix",
+    "lint": "eslint src __test__ --ext .js,.ts --cache --fix",
     "build": "npm run clean && tsc",
     "prepare": "husky install",
     "clean": "rimraf dist"
