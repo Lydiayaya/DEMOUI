@@ -9,8 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsc --watch",
     "lint": "eslint src --ext .js,.ts --cache --fix",
-    "build": "tsc",
-    "prepare": "husky install"
+    "build": "npm run clean && tsc",
+    "prepare": "husky install",
+    "clean": "rimraf dist"
   },
   "publishConfig": {
     "access": "public"
