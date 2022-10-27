@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/Lydiayaya/DEMOproject/compare/v1.0.1...v1.0.2) (2022-10-27)
+
+
+### Bug Fixes
+
+* 修改版本号 ([6863cd3](https://github.com/Lydiayaya/DEMOproject/commit/6863cd3855f1c077d255bd11ac2c8b6368690251))
+* 删除dist文件夹 ([193fb3b](https://github.com/Lydiayaya/DEMOproject/commit/193fb3b2329d2e994fd8c8c9fc0409cb0c1ccb9c))
+
 ## [1.0.1](https://github.com/Lydiayaya/DEMOproject/compare/v1.0.0...v1.0.1) (2022-10-27)
 
 
