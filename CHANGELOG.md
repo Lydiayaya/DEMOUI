@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/Lydiayaya/DEMOproject/compare/v1.0.0...v1.0.1) (2022-10-27)
+
+
+### Bug Fixes
+
+* cd文件误写入乱码 ([23ea58e](https://github.com/Lydiayaya/DEMOproject/commit/23ea58e07cbf8083fa0f2edce770a9610793c974))
+* 修改包的版本号 ([4ab994e](https://github.com/Lydiayaya/DEMOproject/commit/4ab994e91c89869dbc89589f1ea174e00ab06d63))
+
 # 1.0.0 (2022-10-27)
 
 
