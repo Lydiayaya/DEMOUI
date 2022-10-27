@@ -1,5 +1,4 @@
 name: CI
-
 on:
   push:
     branches:
@@ -27,3 +26,4 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm run test
+      tags: latest
