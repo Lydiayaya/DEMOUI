@@ -30,7 +30,10 @@
     // "rootDir": "./",                                  /* Specify the root folder within your source files. */
     "moduleResolution": "node", // 指定使用哪种模块解析策略，默认为 Classic                  /* Specify how TypeScript looks up a file from a given module specifier. */
     "baseUrl": "." /*模块解析路径，默认为tsconfig.json的路径                                 /* Specify the base directory to resolve non-relative module names. */,
-    // "paths": {},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
+    "paths": {
+      "@/*": ["src/*"],
+      "@pages/*": ["src/pages/*"]
+    } /* Specify a set of entries that re-map imports to additional lookup locations. */,
     "rootDirs": [
       "src"
     ] /*编译解析根路径，默认为tsconfig.json位于的目录                  /* Allow multiple folders to be treated as one when resolving modules. */,
@@ -39,10 +42,10 @@
     // "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
     // "moduleSuffixes": [],                             /* List of file name suffixes to search when resolving a module. */
     // "resolveJsonModule": true,                        /* Enable importing .json files. */
-    // "noResolve": true,                                /* Disallow 'import's, 'require's or '<reference>'s from expanding the number of files TypeScript should add to a project. */
+     //"noResolve": true,                                /* Disallow 'import's, 'require's or '<reference>'s from expanding the number of files TypeScript should add to a project. */
 
     /* JavaScript Support */
-    // "allowJs": true,                                  /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */
+     "allowJs": true,                                  /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */
     // "checkJs": true,                                  /* Enable error reporting in type-checked JavaScript files. */
     // "maxNodeModuleJsDepth": 1,                        /* Specify the maximum folder depth used for checking JavaScript files from 'node_modules'. Only applicable with 'allowJs'. */
 

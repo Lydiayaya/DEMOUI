@@ -1,7 +1,7 @@
 {
   "name": "my-test-package-lydiayaya",
   "version": "1.0.3",
-  "main": "index.js",
+  "main": "./index.js",
   "types": "dist/types/index.d.ts",
   "type": "module",
   "scripts": {
@@ -60,11 +60,14 @@
     "webpack-dev-server": "^4.13.3"
   },
   "dependencies": {
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.1",
     "my-test-package": "file:my-test-package",
+    "package-name": "^0.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "webpack": "^5.61.0",
+    "react-router-dom": "^6.11.1",
+    "webpack": "^5.82.1",
     "webpack-cli": "^5.0.2"
   },
   "description": ""

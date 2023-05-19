@@ -1,5 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+//把一个路径或路径片段的序列解析为一个绝对路径
+
 module.exports = {
   entry: './src/index.tsx',
   module: {
@@ -23,7 +25,11 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['', '.tsx', '.ts', '.js', '.jsx'],
+    alias: {
+      //配置指定路径
+      '@pages': path.resolve('./src/pages')
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({

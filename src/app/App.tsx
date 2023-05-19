@@ -1,6 +1,12 @@
 import React from 'react'
+import Layout from './Layouts'
 
 const App: React.FunctionComponent = () => {
-  return <h1>这里就是入口辣</h1>
+  return (
+    <div>
+      <div>11111</div>
+      <Layout></Layout>
+    </div>
+  )
 }
 export default App
