@@ -19,15 +19,35 @@ module.exports = {
         }
       },
       {
-        test: /\.sass$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        test: /\.s[ac]ss$/,
+        use: [
+          //将JS字符生成为style节点
+          'style-loader',
+          //将css转换为CommomJS模块
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              modules: {
+                localIdentName: '[name]__[local]--[hash:base64:5]'
+              }
+            }
+          },
+          //将sass编译成css
+          'sass-loader'
+        ]
       }
     ]
   },
   resolve: {
-    extensions: ['', '.tsx', '.ts', '.js', '.jsx'],
+    extensions: ['', '.tsx', '.ts', '.js', '.jsx', '.css', '.scss'],
     alias: {
       //配置指定路径
+      /*
+      这一步坑死我了，因为解析路径直接使用 src/pages而一直无法引用组件
+      导致卡了两天这个问题
+      最后终于用下面这句指令解决了可恶
+      */
       '@pages': path.resolve('./src/pages')
     }
   },
