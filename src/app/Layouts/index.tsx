@@ -13,7 +13,7 @@ const Layout: React.FC = () => {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" Component={Component} />
+          <Route path="/component" Component={Component} />
           <Route path="/todolist" Component={TodoList} />
           <Route path="/resume" Component={Resume} />
           <Route path="/theme" Component={Theme} />

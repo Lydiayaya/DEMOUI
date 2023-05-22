@@ -34,7 +34,16 @@ module.exports = {
             }
           },
           //将sass编译成css
-          'sass-loader'
+          'sass-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: [
+                // resolve方法第二个参数为scss配置文件地址，如果有多个，就进行依次添加即可
+                path.resolve(__dirname, './src/common/style/contants.scss')
+              ]
+            }
+          }
         ]
       }
     ]
